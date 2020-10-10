@@ -8,3 +8,4 @@ vec = 1:size;
 
 %% Visuals:
 offset = 0.1;
+visuType = "+";
