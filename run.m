@@ -1,3 +1,3 @@
 init;
 generate;
-visualization;
+showM(m);
