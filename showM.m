@@ -1,4 +1,4 @@
-function [] = showM(m)
+function [] = showM(m, visuType, offset)
     if ndims(m) == 2 % 2D MATRIX
         [A, B] = size(m);
         for i = 1:A
@@ -13,18 +13,23 @@ function [] = showM(m)
         end
         
     elseif ndims(m) == 3 % 3D MATRIX
+        [A, B, C] = size(m);
+        vecA = [1, A];
+        vecB = [1, B];
+        vecC = [1, C];
+        
         plot3(...
-            vec, vec, vec * 0, "b",...
-            flip(vec), vec, vec * 0, "b",...
-            vec, vec + flip(vec), vec, "b",...
-            flip(vec), vec + flip(vec), vec, "b",...
-            vec + flip(vec), vec, vec, "b",...
-            vec + flip(vec), flip(vec), vec, "b")
+            vecA, vecB, vecC * 0, "b",...
+            flip(vecA), vecB, vecC * 0, "b",...
+            vecA, vecB + flip(vecB), vecC, "b",...
+            flip(vecA), vecB + flip(vecB), vecC, "b",...
+            vecA + flip(vecA), vecB, vecC, "b",...
+            vecA + flip(vecA), flip(vecB), vecC, "b")
 
         grid
-        axis([-offset, size + 1 + offset, -offset, size + 1 + offset, -offset, size + 1 + offset])
+        axis([-offset, A + 1 + offset, -offset, B + 1 + offset, -offset, C + 1 + offset])
 
-        [A, B, C] = size(m)
+        
         switch visuType
             case "normal"
                 for i= 1:A
