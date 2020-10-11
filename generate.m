@@ -1,7 +1,11 @@
-% message = "hello world";
-message = "hello";
+message = 'HELLO WORLD';
 
-
+m = [];
+g = charToMatrix("gap");
+for l = message
+    m = [m, g, charToMatrix(l)]; 
+end
+showM(m)
 
 
 
