@@ -1,17 +1,3 @@
-clear
-clc
-m = charToMatrix("Z");
-for i = 1:7
-    for j = 1:5
-        if m(i,j)
-            fprintf("0")
-        else
-            fprintf("·")
-        end
-    end
-    fprintf("\n")
-end
-
 function [m] = charToMatrix(t)
     m = zeros(7, 5);
     switch t
