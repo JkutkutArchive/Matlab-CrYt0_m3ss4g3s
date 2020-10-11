@@ -1,3 +1,3 @@
 init;
 generate;
-showM(m, visuType, offset);
+% showM(m, visuType, offset);
