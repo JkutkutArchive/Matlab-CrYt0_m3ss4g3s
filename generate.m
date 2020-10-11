@@ -1,4 +1,5 @@
-message = 'HELLO WORLD';
+% message = 'HELLO WORLD';
+message = 'HE';
 
 
 L = length(message);
