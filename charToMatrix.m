@@ -147,5 +147,10 @@ function [m] = charToMatrix(t)
             for i=1:5
                 m(7 - i, i) = true;
             end
+        % Symbols
+        case " "
+        case "gap"
+            m = zeros(7,1)
+        
     end
 end
