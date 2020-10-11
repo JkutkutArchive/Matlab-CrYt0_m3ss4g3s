@@ -28,7 +28,7 @@ function [m] = charToMatrix(t)
             m(6, 4) = true;
         case "E"
             m = charToMatrix("F");
-            m(7, 2:6) = true;
+            m(7, 2:5) = true;
         case "F"
             m(1:7, 1) = true;
             m(1, 2:5) = true;
