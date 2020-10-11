@@ -8,4 +8,4 @@ addpath functions/
 %% Visuals:
 h = 7;
 offset = 0.1;
-visuType = "*";
+visuType = "normal";
