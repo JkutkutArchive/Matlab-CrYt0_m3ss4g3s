@@ -1,5 +1,8 @@
-% message = 'HELLO WORLD';
-message = 'HE';
+message = 'HELLO WORLD';
+% message = 'HE';
+
+% number A
+% compose("%X",A)
 
 
 L = length(message);

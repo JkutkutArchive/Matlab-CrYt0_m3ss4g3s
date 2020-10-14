@@ -149,6 +149,11 @@ function [m] = charToMatrix(t)
             end
         % Symbols
         case " "
+            m = ones(7,5);
+            m(1:end, 1) = false;
+            m(1:end, end) = false;
+            m(1, 1:end) = false;
+            m(end, 1:end) = false;
         case "gap"
             m = zeros(7,1);
         
